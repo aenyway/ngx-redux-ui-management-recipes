@@ -14,8 +14,7 @@ import {storeLogger} from "ngrx-store-logger";
 import * as fromLayout from "./layout/layout.reducer"
 import * as fromGames from "./games/games.reducer"
 import {compose} from "@ngrx/core";
-import {combineReducers, State} from "@ngrx/store";
-import {state} from "@angular/core";
+import {combineReducers} from "@ngrx/store";
 
 export interface AppState {
   layout: fromLayout.State;

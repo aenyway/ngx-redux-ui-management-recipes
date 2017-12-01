@@ -15,6 +15,9 @@ export class TemplateModalComponent {
   @ViewChild('content') _templateModal:ElementRef;
 
   @Input() set modalState(_modalState:any) {;
+
+    console.log("_modalState", _modalState);
+
     if(_modalState == this.modalName) {
       this.openModal()
     } else if(this.modalRef) {
